@@ -2,20 +2,6 @@
   <form class='form-horizontal'>
 
     <div class='form-group has-success'>
-      <label class='col-xs-2 text-success'>Amount</label>
-      <div class='col-xs-10'>
-        <input type='text' class='form-control' placeholder='0.001' ng-model='transaction.amount' required>
-      </div>
-    </div>
-
-    <div class='form-group has-success'>
-      <label class='col-xs-2 text-success'>Currency</label>
-      <div class='col-xs-10'>
-        <input type='text' class='form-control' placeholder='XRP' ng-model='transaction.currency' required>
-      </div>
-    </div>
-
-    <div class='form-group has-success'>
       <label class='col-xs-2 text-success'>Deposit or Withdrawal?</label>
       <div class='col-xs-10'>
         <label class='radio-inline'>
@@ -24,13 +10,6 @@
         <label class='radio-inline'>
           <input type='radio' name='inlineRadioOptions' ng-value='false' ng-model='transaction.deposit'> Withdrawal
         </label>
-      </div>
-    </div>
-
-    <div class='form-group has-success'>
-      <label class='col-xs-2 text-success'>External Account ID</label>
-      <div class='col-xs-10'>
-        <input type='text' class='form-control' placeholder='' ng-model='transaction.external_account_id' required>
       </div>
     </div>
 
@@ -59,6 +38,62 @@
       <label class='col-xs-2'>Data</label>
       <div class='col-xs-10'>
         <input type='text' class='form-control' placeholder='' ng-model='transaction.data'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Invoice ID</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.invoice_id'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Destination Account ID</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.destination_account_id'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Destination Amount</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.destination_amount'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Destination Currency</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.destination_currency'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Source Account ID</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.source_account_id'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Source Amount</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.source_amount'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Source Currency</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.source_currency'>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='col-xs-2'>Memos</label>
+      <div class='col-xs-10'>
+        <input type='text' class='form-control' placeholder='' ng-model='transaction.memos'>
       </div>
     </div>
 

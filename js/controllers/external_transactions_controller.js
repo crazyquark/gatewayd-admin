@@ -17,7 +17,9 @@ rippleGatewayApp.controller('ExternalTransactionsCtrl', [
     //create
     $scope.create = function() {
       $scope.crudType = "create";
-      $scope.transaction = {};
+      $scope.transaction = {
+        external_account_id: 1 // delete this when fully deprecated
+      };
     };
 
     $scope.submitCreate = function() {
