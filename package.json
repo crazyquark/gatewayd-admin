@@ -1,6 +1,6 @@
 {
   "name": "gatewayd-admin",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "An example angular webapp for interacting with Gatewayd.",
   "main": "Gruntfile.js",
   "directories": {
