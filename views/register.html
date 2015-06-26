@@ -14,8 +14,12 @@
     <form id='registrationForm' role="form" ng-hide="registeredUser" ng-submit="register()">
       <h5>Account Information</h5>
       <div class="form-group">
-        <label class="sr-only" for="signup-email">Ripple address</label>
+        <label class="sr-only" for="signup-address">Ripple address</label>
         <input type="text" ng-model='newUser.ripple_address' class="form-control" id="signup-ripple-address" placeholder="Ripple address">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="signup-secret">Ripple secret</label>
+        <input type="text" ng-model='newUser.secret' class="form-control" id="signup-ripple-secret" placeholder="Ripple secret">
       </div>
       <div class="form-group">
         <label class="sr-only" for="signup-email">Email address</label>
@@ -25,6 +29,14 @@
         <label class="sr-only" for="signup-password">Password</label>
         <input type="password" ng-model='newUser.password' class="form-control" id="signup-password" placeholder="Password">
       </div>
+      <div class="form-group">
+        <label class="sr-only" for="signup-currency">Currency</label>
+        <input type="text" ng-model='newUser.currency' class="form-control" id="signup-currency" placeholder="EUR">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="signup-amount">Currency</label>
+        <input type="text" ng-model='newUser.amount' class="form-control" id="signup-amount" placeholder="100">
+      </div>
       <div class="checkbox">
         <label>
           <input type="checkbox" value="term">
@@ -32,5 +44,6 @@
       </div>
       <button class="btn btn-primary" type="submit">Sign up</button>
     </form>
+    <p class="small">Your secret won't be store anywhere; will be used once to configure your account.</p>
   </div>
 </div>
