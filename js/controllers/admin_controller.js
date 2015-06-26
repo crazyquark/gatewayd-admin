@@ -23,7 +23,10 @@ rippleGatewayApp.controller('AdminCtrl', [
   $scope.newUser = {
     name: '',
     password: '',
-    ripple_address: ''
+    ripple_address: '',
+    secret: '',
+    currency: '',
+    amount: '' 
   };
 
   $scope.registeredUser = null;

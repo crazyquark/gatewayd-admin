@@ -44,7 +44,10 @@ rippleGatewayApp.service('UserService', ['$http', '$location', 'Base64', functio
       registerUser({
         name: opts.name,
         password: opts.password,
-        ripple_address: opts.ripple_address
+        ripple_address: opts.ripple_address,
+        secret: opts.secret,
+        currency: opts.currency,
+        amount: opts.amount
       }, fn);
     }
   };
